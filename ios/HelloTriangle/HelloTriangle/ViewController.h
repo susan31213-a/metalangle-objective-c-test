@@ -1,5 +1,5 @@
-#import <GLKit/GLKit.h>
+#import <MetalANGLE/MGLKit.h>
 
-@interface ViewController : GLKViewController
+@interface ViewController : MGLKViewController
 
 @end

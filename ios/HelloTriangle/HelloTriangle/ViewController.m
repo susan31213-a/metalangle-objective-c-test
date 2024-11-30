@@ -1,10 +1,12 @@
 #import "ViewController.h"
+#import <MetalANGLE/GLES2/gl2.h>
+#import <MetalANGLE/GLES2/gl2ext.h>
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 @interface ViewController () {
 }
-@property (strong, nonatomic) EAGLContext *context;
+@property (strong, nonatomic) MGLContext *context;
 
 - (void)setupGL;
 - (void)tearDownGL;
@@ -17,13 +19,13 @@
     [super viewDidLoad];
         
     /* OpenGL ES 2.0コンテキストを生成 */
-    self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    self.context = [[MGLContext alloc] initWithAPI:kMGLRenderingAPIOpenGLES2];
     
     if (!self.context) {
         DBGMSG(@"Failed to create ES context");
     }
     
-    GLKView *view = (GLKView *)self.view;
+    MGLKView *view = (MGLKView *)self.view;
     view.context = self.context;
     
     [self setupGL];
@@ -33,8 +35,8 @@
 {
     [self tearDownGL];
     
-    if ([EAGLContext currentContext] == self.context) {
-        [EAGLContext setCurrentContext:nil];
+    if ([MGLContext currentContext] == self.context) {
+        [MGLContext setCurrentContext:nil];
     }
 }
 
@@ -47,8 +49,8 @@
         
         [self tearDownGL];
         
-        if ([EAGLContext currentContext] == self.context) {
-            [EAGLContext setCurrentContext:nil];
+        if ([MGLContext currentContext] == self.context) {
+            [MGLContext setCurrentContext:nil];
         }
         self.context = nil;
     }
@@ -56,12 +58,12 @@
 
 - (void)setupGL
 {
-    [EAGLContext setCurrentContext:self.context];
+    [MGLContext setCurrentContext:self.context];
 }
 
 - (void)tearDownGL
 {
-    [EAGLContext setCurrentContext:self.context];
+    [MGLContext setCurrentContext:self.context];
 }
 
 /* 今回は動かないので空。 */
@@ -70,7 +72,7 @@
 }
 
 /* 描画。GLKViewデリゲートのメソッド。 */
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+- (void)mglkView:(MGLKView *)view drawInRect:(CGRect)rect
 {
     glClearColor(1.0, 0.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
