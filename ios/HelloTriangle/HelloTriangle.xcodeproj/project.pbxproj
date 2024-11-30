@@ -1,0 +1,1391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5651878B1998B3760053D793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878A1998B3760053D793 /* Foundation.framework */; };
+		5651878D1998B3760053D793 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878C1998B3760053D793 /* CoreGraphics.framework */; };
+		5651878F1998B3760053D793 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878E1998B3760053D793 /* UIKit.framework */; };
+		565187991998B3760053D793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565187971998B3760053D793 /* InfoPlist.strings */; };
+		5651879B1998B3760053D793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5651879A1998B3760053D793 /* main.m */; };
+		5651879F1998B3760053D793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5651879E1998B3760053D793 /* AppDelegate.m */; };
+		565187A21998B3760053D793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565187A01998B3760053D793 /* Main.storyboard */; };
+		565187A91998B3760053D793 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565187A81998B3760053D793 /* ViewController.m */; };
+		565187AB1998B3760053D793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565187AA1998B3760053D793 /* Images.xcassets */; };
+		565187B21998B3760053D793 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565187B11998B3760053D793 /* XCTest.framework */; };
+		565187B31998B3760053D793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878A1998B3760053D793 /* Foundation.framework */; };
+		565187B41998B3760053D793 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878E1998B3760053D793 /* UIKit.framework */; };
+		565187BC1998B3760053D793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565187BA1998B3760053D793 /* InfoPlist.strings */; };
+		565187BE1998B3760053D793 /* HelloTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565187BD1998B3760053D793 /* HelloTriangleTests.m */; };
+		9ADABEAF2CFB235C006A37E6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABEAE2CFB235C006A37E6 /* OpenGLES.framework */; platformFilter = ios; };
+		9ADABEB12CFB2463006A37E6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABEB02CFB2463006A37E6 /* GLKit.framework */; platformFilter = ios; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565187B51998B3760053D793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5651877F1998B3760053D793 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565187861998B3760053D793;
+			remoteInfo = HelloTriangle;
+		};
+		9ADABE2D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A60525323464F51005CEA98;
+			remoteInfo = MetalANGLE;
+		};
+		9ADABE2F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A93697A244CCFDE00B3497E;
+			remoteInfo = MetalANGLE_static;
+		};
+		9ADABE312CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A936F22244CEFA800B3497E;
+			remoteInfo = angle_base;
+		};
+		9ADABE332CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A6055C123465399005CEA98;
+			remoteInfo = angle_metal_backend;
+		};
+		9ADABE352CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9A6AAA23911BBB006A152A;
+			remoteInfo = angle_gl_backend;
+		};
+		9ADABE372CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A60602A23466F1C005CEA98;
+			remoteInfo = angle_image_util;
+		};
+		9ADABE392CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2F9AA2346F0FA00E0B98C;
+			remoteInfo = glslang;
+		};
+		9ADABE3B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2F9B72346F10600E0B98C;
+			remoteInfo = "spirv-cross";
+		};
+		9ADABE3D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2F9C42346F30C00E0B98C;
+			remoteInfo = jsoncpp;
+		};
+		9ADABE3F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2FFF0234734AD00E0B98C;
+			remoteInfo = angle_util;
+		};
+		9ADABE412CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2003F23473BDD00E0B98C;
+			remoteInfo = angle_common;
+		};
+		9ADABE432CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E493234867E9007CA616;
+			remoteInfo = sample_util;
+		};
+		9ADABE452CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F9BD24065C0C005BA9A8;
+			remoteInfo = MetalANGLE_mac;
+		};
+		9ADABE472CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A936BC4244CD98B00B3497E;
+			remoteInfo = MetalANGLE_static_mac;
+		};
+		9ADABE492CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A93703D244CF03700B3497E;
+			remoteInfo = angle_base_mac;
+		};
+		9ADABE4B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F77724065B06005BA9A8;
+			remoteInfo = angle_metal_backend_mac;
+		};
+		9ADABE4D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F75824065AF8005BA9A8;
+			remoteInfo = angle_gl_backend_mac;
+		};
+		9ADABE4F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F72B24065ADE005BA9A8;
+			remoteInfo = angle_image_util_mac;
+		};
+		9ADABE512CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F71F24065ACE005BA9A8;
+			remoteInfo = glslang_mac;
+		};
+		9ADABE532CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F6ED24065AC0005BA9A8;
+			remoteInfo = "spirv-cross_mac";
+		};
+		9ADABE552CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F6DC24065AB5005BA9A8;
+			remoteInfo = jsoncpp_mac;
+		};
+		9ADABE572CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F6D124065AA6005BA9A8;
+			remoteInfo = angle_util_mac;
+		};
+		9ADABE592CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90F6BC24065A95005BA9A8;
+			remoteInfo = angle_common_mac;
+		};
+		9ADABE5B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FA0124065F4B005BA9A8;
+			remoteInfo = sample_util_mac;
+		};
+		9ADABE5D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF9599A244C7CD700F59740;
+			remoteInfo = MetalANGLE_tvos;
+		};
+		9ADABE5F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A936E0A244CD9AA00B3497E;
+			remoteInfo = MetalANGLE_static_tvos;
+		};
+		9ADABE612CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A937154244CF04900B3497E;
+			remoteInfo = angle_base_tvos;
+		};
+		9ADABE632CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF95755244C7CC300F59740;
+			remoteInfo = angle_metal_backend_tvos;
+		};
+		9ADABE652CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF95731244C7CB200F59740;
+			remoteInfo = angle_gl_backend_tvos;
+		};
+		9ADABE672CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF956C6244C7C5100F59740;
+			remoteInfo = "spirv-cross_tvos";
+		};
+		9ADABE692CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF956F8244C7C8700F59740;
+			remoteInfo = glslang_tvos;
+		};
+		9ADABE6B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF95704244C7C9300F59740;
+			remoteInfo = angle_image_util_tvos;
+		};
+		9ADABE6D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF956B5244C7BF300F59740;
+			remoteInfo = jsoncpp_tvos;
+		};
+		9ADABE6F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A03A9C7244C84EE00E5E114;
+			remoteInfo = angle_util_tvos;
+		};
+		9ADABE712CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A03A9E5244C850000E5E114;
+			remoteInfo = angle_common_tvos;
+		};
+		9ADABE732CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF959B3244C7D5800F59740;
+			remoteInfo = sample_util_tvos;
+		};
+		9ADABE752CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2FFAB2347260000E0B98C;
+			remoteInfo = MetalANGLE_ios_13.0;
+		};
+		9ADABE772CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2FFD0234727A400E0B98C;
+			remoteInfo = angle_metal_backend_ios_13.0;
+		};
+		9ADABE792CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AA2011A2347465000E0B98C;
+			remoteInfo = hello_triangle;
+		};
+		9ADABE7B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E46623485DC7007CA616;
+			remoteInfo = multi_texture;
+		};
+		9ADABE7D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E4B62348700D007CA616;
+			remoteInfo = particle_system;
+		};
+		9ADABE7F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E4DB234871B2007CA616;
+			remoteInfo = simple_texture_2d;
+		};
+		9ADABE812CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E4FE23487239007CA616;
+			remoteInfo = simple_texture_cubemap;
+		};
+		9ADABE832CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E52023487284007CA616;
+			remoteInfo = simple_vertex_shader;
+		};
+		9ADABE852CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E541234872BA007CA616;
+			remoteInfo = texture_wrap;
+		};
+		9ADABE872CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E5682348749C007CA616;
+			remoteInfo = mip_map_2d;
+		};
+		9ADABE892CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A97E589234874E2007CA616;
+			remoteInfo = stencil_operations;
+		};
+		9ADABE8B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0ABF407C235340FE0051488C;
+			remoteInfo = tri_fan_microbench;
+		};
+		9ADABE8D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FB4F2406D93C005BA9A8;
+			remoteInfo = hello_triangle_mac;
+		};
+		9ADABE8F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FB742406DB53005BA9A8;
+			remoteInfo = multi_texture_mac;
+		};
+		9ADABE912CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FB822406DB66005BA9A8;
+			remoteInfo = particle_system_mac;
+		};
+		9ADABE932CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FB902406DB72005BA9A8;
+			remoteInfo = simple_texture_2d_mac;
+		};
+		9ADABE952CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FB9E2406DB80005BA9A8;
+			remoteInfo = simple_texture_cubemap_mac;
+		};
+		9ADABE972CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FBAC2406DB8C005BA9A8;
+			remoteInfo = simple_vertex_shader_mac;
+		};
+		9ADABE992CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FBBA2406DB99005BA9A8;
+			remoteInfo = texture_wrap_mac;
+		};
+		9ADABE9B2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FBC82406DBA9005BA9A8;
+			remoteInfo = mip_map_2d_mac;
+		};
+		9ADABE9D2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FBD62406DBB9005BA9A8;
+			remoteInfo = stencil_operations_mac;
+		};
+		9ADABE9F2CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A90FBE42406DBC8005BA9A8;
+			remoteInfo = tri_fan_microbench_mac;
+		};
+		9ADABEA12CFAFCBE006A37E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AF959EB244C7EE900F59740;
+			remoteInfo = simple_vertex_shader_tvos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		565187871998B3760053D793 /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5651878A1998B3760053D793 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5651878C1998B3760053D793 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5651878E1998B3760053D793 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		565187961998B3760053D793 /* HelloTriangle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloTriangle-Info.plist"; sourceTree = "<group>"; };
+		565187981998B3760053D793 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5651879A1998B3760053D793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5651879C1998B3760053D793 /* HelloTriangle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloTriangle-Prefix.pch"; sourceTree = "<group>"; };
+		5651879D1998B3760053D793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5651879E1998B3760053D793 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		565187A11998B3760053D793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		565187A71998B3760053D793 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		565187A81998B3760053D793 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		565187AA1998B3760053D793 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		565187B01998B3760053D793 /* HelloTriangleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloTriangleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		565187B11998B3760053D793 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		565187B91998B3760053D793 /* HelloTriangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloTriangleTests-Info.plist"; sourceTree = "<group>"; };
+		565187BB1998B3760053D793 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		565187BD1998B3760053D793 /* HelloTriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloTriangleTests.m; sourceTree = "<group>"; };
+		9ADABDAB2CFAF948006A37E6 /* MetalANGLE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalANGLE.framework; path = "../../../../Library/Developer/Xcode/DerivedData/HelloTriangle-ctatprraqgfumghkipvuikjdpqvp/Build/Products/Debug-iphonesimulator/MetalANGLE.framework"; sourceTree = "<group>"; };
+		9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OpenGLES.xcodeproj; sourceTree = "<group>"; };
+		9ADABEA42CFB00A4006A37E6 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		9ADABEAE2CFB235C006A37E6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9ADABEB02CFB2463006A37E6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		565187841998B3760053D793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5651878D1998B3760053D793 /* CoreGraphics.framework in Frameworks */,
+				5651878F1998B3760053D793 /* UIKit.framework in Frameworks */,
+				5651878B1998B3760053D793 /* Foundation.framework in Frameworks */,
+				9ADABEB12CFB2463006A37E6 /* GLKit.framework in Frameworks */,
+				9ADABEAF2CFB235C006A37E6 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565187AD1998B3760053D793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565187B21998B3760053D793 /* XCTest.framework in Frameworks */,
+				565187B41998B3760053D793 /* UIKit.framework in Frameworks */,
+				565187B31998B3760053D793 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5651877E1998B3760053D793 = {
+			isa = PBXGroup;
+			children = (
+				9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */,
+				565187941998B3760053D793 /* HelloTriangle */,
+				565187B71998B3760053D793 /* HelloTriangleTests */,
+				565187891998B3760053D793 /* Frameworks */,
+				565187881998B3760053D793 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		565187881998B3760053D793 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565187871998B3760053D793 /* HelloTriangle.app */,
+				565187B01998B3760053D793 /* HelloTriangleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565187891998B3760053D793 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ADABEB02CFB2463006A37E6 /* GLKit.framework */,
+				9ADABEAE2CFB235C006A37E6 /* OpenGLES.framework */,
+				9ADABEA42CFB00A4006A37E6 /* Metal.framework */,
+				9ADABDAB2CFAF948006A37E6 /* MetalANGLE.framework */,
+				5651878A1998B3760053D793 /* Foundation.framework */,
+				5651878C1998B3760053D793 /* CoreGraphics.framework */,
+				5651878E1998B3760053D793 /* UIKit.framework */,
+				565187B11998B3760053D793 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		565187941998B3760053D793 /* HelloTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				5651879D1998B3760053D793 /* AppDelegate.h */,
+				5651879E1998B3760053D793 /* AppDelegate.m */,
+				565187A01998B3760053D793 /* Main.storyboard */,
+				565187A71998B3760053D793 /* ViewController.h */,
+				565187A81998B3760053D793 /* ViewController.m */,
+				565187AA1998B3760053D793 /* Images.xcassets */,
+				565187951998B3760053D793 /* Supporting Files */,
+			);
+			path = HelloTriangle;
+			sourceTree = "<group>";
+		};
+		565187951998B3760053D793 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565187961998B3760053D793 /* HelloTriangle-Info.plist */,
+				565187971998B3760053D793 /* InfoPlist.strings */,
+				5651879A1998B3760053D793 /* main.m */,
+				5651879C1998B3760053D793 /* HelloTriangle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		565187B71998B3760053D793 /* HelloTriangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				565187BD1998B3760053D793 /* HelloTriangleTests.m */,
+				565187B81998B3760053D793 /* Supporting Files */,
+			);
+			path = HelloTriangleTests;
+			sourceTree = "<group>";
+		};
+		565187B81998B3760053D793 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565187B91998B3760053D793 /* HelloTriangleTests-Info.plist */,
+				565187BA1998B3760053D793 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9ADABDEF2CFAFCBE006A37E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADABE2E2CFAFCBE006A37E6 /* MetalANGLE.framework */,
+				9ADABE302CFAFCBE006A37E6 /* libMetalANGLE_static.a */,
+				9ADABE322CFAFCBE006A37E6 /* libangle_base.a */,
+				9ADABE342CFAFCBE006A37E6 /* libangle_metal_backend.a */,
+				9ADABE362CFAFCBE006A37E6 /* libangle_gl_backend.a */,
+				9ADABE382CFAFCBE006A37E6 /* libangle_image_util.a */,
+				9ADABE3A2CFAFCBE006A37E6 /* libglslang.a */,
+				9ADABE3C2CFAFCBE006A37E6 /* libspirv-cross.a */,
+				9ADABE3E2CFAFCBE006A37E6 /* libjsoncpp.a */,
+				9ADABE402CFAFCBE006A37E6 /* libangle_util.a */,
+				9ADABE422CFAFCBE006A37E6 /* libangle_common.a */,
+				9ADABE442CFAFCBE006A37E6 /* sample_util.framework */,
+				9ADABE462CFAFCBE006A37E6 /* MetalANGLE.framework */,
+				9ADABE482CFAFCBE006A37E6 /* libMetalANGLE_static_mac.a */,
+				9ADABE4A2CFAFCBE006A37E6 /* libangle_base_mac.a */,
+				9ADABE4C2CFAFCBE006A37E6 /* libangle_metal_backend_mac.a */,
+				9ADABE4E2CFAFCBE006A37E6 /* libangle_gl_backend_mac.a */,
+				9ADABE502CFAFCBE006A37E6 /* libangle_image_util_mac.a */,
+				9ADABE522CFAFCBE006A37E6 /* libglslang_mac.a */,
+				9ADABE542CFAFCBE006A37E6 /* libspirv-cross_mac.a */,
+				9ADABE562CFAFCBE006A37E6 /* libjsoncpp_mac.a */,
+				9ADABE582CFAFCBE006A37E6 /* libangle_util_mac.a */,
+				9ADABE5A2CFAFCBE006A37E6 /* libangle_common_mac.a */,
+				9ADABE5C2CFAFCBE006A37E6 /* sample_util_mac.framework */,
+				9ADABE5E2CFAFCBE006A37E6 /* MetalANGLE.framework */,
+				9ADABE602CFAFCBE006A37E6 /* libMetalANGLE_static_tvos.a */,
+				9ADABE622CFAFCBE006A37E6 /* libangle_base_tvos.a */,
+				9ADABE642CFAFCBE006A37E6 /* libangle_metal_backend_tvos.a */,
+				9ADABE662CFAFCBE006A37E6 /* libangle_gl_backend_tvos.a */,
+				9ADABE682CFAFCBE006A37E6 /* libspirv-cross_tvos.a */,
+				9ADABE6A2CFAFCBE006A37E6 /* libglslang_tvos.a */,
+				9ADABE6C2CFAFCBE006A37E6 /* libangle_image_util_tvos.a */,
+				9ADABE6E2CFAFCBE006A37E6 /* libjsoncpp_tvos.a */,
+				9ADABE702CFAFCBE006A37E6 /* libangle_util_tvos.a */,
+				9ADABE722CFAFCBE006A37E6 /* libangle_common_tvos.a */,
+				9ADABE742CFAFCBE006A37E6 /* sample_util_tvos.framework */,
+				9ADABE762CFAFCBE006A37E6 /* MetalANGLE_ios_13.0.framework */,
+				9ADABE782CFAFCBE006A37E6 /* libangle_metal_backend_ios_13.0.a */,
+				9ADABE7A2CFAFCBE006A37E6 /* hello_triangle.app */,
+				9ADABE7C2CFAFCBE006A37E6 /* multi_texture.app */,
+				9ADABE7E2CFAFCBE006A37E6 /* particle_system.app */,
+				9ADABE802CFAFCBE006A37E6 /* simple_texture_2d.app */,
+				9ADABE822CFAFCBE006A37E6 /* simple_texture_cubemap.app */,
+				9ADABE842CFAFCBE006A37E6 /* simple_vertex_shader.app */,
+				9ADABE862CFAFCBE006A37E6 /* texture_wrap.app */,
+				9ADABE882CFAFCBE006A37E6 /* mip_map_2d.app */,
+				9ADABE8A2CFAFCBE006A37E6 /* stencil_operations.app */,
+				9ADABE8C2CFAFCBE006A37E6 /* tri_fan_microbench.app */,
+				9ADABE8E2CFAFCBE006A37E6 /* hello_triangle_mac.app */,
+				9ADABE902CFAFCBE006A37E6 /* multi_texture_mac.app */,
+				9ADABE922CFAFCBE006A37E6 /* particle_system_mac.app */,
+				9ADABE942CFAFCBE006A37E6 /* simple_texture_2d_mac.app */,
+				9ADABE962CFAFCBE006A37E6 /* simple_texture_cubemap_mac.app */,
+				9ADABE982CFAFCBE006A37E6 /* simple_vertex_shader_mac.app */,
+				9ADABE9A2CFAFCBE006A37E6 /* texture_wrap_mac.app */,
+				9ADABE9C2CFAFCBE006A37E6 /* mip_map_2d_mac.app */,
+				9ADABE9E2CFAFCBE006A37E6 /* stencil_operations_mac.app */,
+				9ADABEA02CFAFCBE006A37E6 /* tri_fan_microbench_mac.app */,
+				9ADABEA22CFAFCBE006A37E6 /* simple_vertex_shader_tvos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		565187861998B3760053D793 /* HelloTriangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565187C11998B3760053D793 /* Build configuration list for PBXNativeTarget "HelloTriangle" */;
+			buildPhases = (
+				565187831998B3760053D793 /* Sources */,
+				565187841998B3760053D793 /* Frameworks */,
+				565187851998B3760053D793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangle;
+			productName = HelloTriangle;
+			productReference = 565187871998B3760053D793 /* HelloTriangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		565187AF1998B3760053D793 /* HelloTriangleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565187C41998B3760053D793 /* Build configuration list for PBXNativeTarget "HelloTriangleTests" */;
+			buildPhases = (
+				565187AC1998B3760053D793 /* Sources */,
+				565187AD1998B3760053D793 /* Frameworks */,
+				565187AE1998B3760053D793 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565187B61998B3760053D793 /* PBXTargetDependency */,
+			);
+			name = HelloTriangleTests;
+			productName = HelloTriangleTests;
+			productReference = 565187B01998B3760053D793 /* HelloTriangleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5651877F1998B3760053D793 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "村上幸雄";
+				TargetAttributes = {
+					565187AF1998B3760053D793 = {
+						TestTargetID = 565187861998B3760053D793;
+					};
+				};
+			};
+			buildConfigurationList = 565187821998B3760053D793 /* Build configuration list for PBXProject "HelloTriangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 5651877E1998B3760053D793;
+			productRefGroup = 565187881998B3760053D793 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9ADABDEF2CFAFCBE006A37E6 /* Products */;
+					ProjectRef = 9ADABDEE2CFAFCBE006A37E6 /* OpenGLES.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				565187861998B3760053D793 /* HelloTriangle */,
+				565187AF1998B3760053D793 /* HelloTriangleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9ADABE2E2CFAFCBE006A37E6 /* MetalANGLE.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MetalANGLE.framework;
+			remoteRef = 9ADABE2D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE302CFAFCBE006A37E6 /* libMetalANGLE_static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMetalANGLE_static.a;
+			remoteRef = 9ADABE2F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE322CFAFCBE006A37E6 /* libangle_base.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_base.a;
+			remoteRef = 9ADABE312CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE342CFAFCBE006A37E6 /* libangle_metal_backend.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_metal_backend.a;
+			remoteRef = 9ADABE332CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE362CFAFCBE006A37E6 /* libangle_gl_backend.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_gl_backend.a;
+			remoteRef = 9ADABE352CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE382CFAFCBE006A37E6 /* libangle_image_util.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_image_util.a;
+			remoteRef = 9ADABE372CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE3A2CFAFCBE006A37E6 /* libglslang.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglslang.a;
+			remoteRef = 9ADABE392CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE3C2CFAFCBE006A37E6 /* libspirv-cross.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libspirv-cross.a";
+			remoteRef = 9ADABE3B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE3E2CFAFCBE006A37E6 /* libjsoncpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsoncpp.a;
+			remoteRef = 9ADABE3D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE402CFAFCBE006A37E6 /* libangle_util.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_util.a;
+			remoteRef = 9ADABE3F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE422CFAFCBE006A37E6 /* libangle_common.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_common.a;
+			remoteRef = 9ADABE412CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE442CFAFCBE006A37E6 /* sample_util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = sample_util.framework;
+			remoteRef = 9ADABE432CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE462CFAFCBE006A37E6 /* MetalANGLE.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MetalANGLE.framework;
+			remoteRef = 9ADABE452CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE482CFAFCBE006A37E6 /* libMetalANGLE_static_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMetalANGLE_static_mac.a;
+			remoteRef = 9ADABE472CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE4A2CFAFCBE006A37E6 /* libangle_base_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_base_mac.a;
+			remoteRef = 9ADABE492CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE4C2CFAFCBE006A37E6 /* libangle_metal_backend_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_metal_backend_mac.a;
+			remoteRef = 9ADABE4B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE4E2CFAFCBE006A37E6 /* libangle_gl_backend_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_gl_backend_mac.a;
+			remoteRef = 9ADABE4D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE502CFAFCBE006A37E6 /* libangle_image_util_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_image_util_mac.a;
+			remoteRef = 9ADABE4F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE522CFAFCBE006A37E6 /* libglslang_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglslang_mac.a;
+			remoteRef = 9ADABE512CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE542CFAFCBE006A37E6 /* libspirv-cross_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libspirv-cross_mac.a";
+			remoteRef = 9ADABE532CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE562CFAFCBE006A37E6 /* libjsoncpp_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsoncpp_mac.a;
+			remoteRef = 9ADABE552CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE582CFAFCBE006A37E6 /* libangle_util_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_util_mac.a;
+			remoteRef = 9ADABE572CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE5A2CFAFCBE006A37E6 /* libangle_common_mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_common_mac.a;
+			remoteRef = 9ADABE592CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE5C2CFAFCBE006A37E6 /* sample_util_mac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = sample_util_mac.framework;
+			remoteRef = 9ADABE5B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE5E2CFAFCBE006A37E6 /* MetalANGLE.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MetalANGLE.framework;
+			remoteRef = 9ADABE5D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE602CFAFCBE006A37E6 /* libMetalANGLE_static_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMetalANGLE_static_tvos.a;
+			remoteRef = 9ADABE5F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE622CFAFCBE006A37E6 /* libangle_base_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_base_tvos.a;
+			remoteRef = 9ADABE612CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE642CFAFCBE006A37E6 /* libangle_metal_backend_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_metal_backend_tvos.a;
+			remoteRef = 9ADABE632CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE662CFAFCBE006A37E6 /* libangle_gl_backend_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_gl_backend_tvos.a;
+			remoteRef = 9ADABE652CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE682CFAFCBE006A37E6 /* libspirv-cross_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libspirv-cross_tvos.a";
+			remoteRef = 9ADABE672CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE6A2CFAFCBE006A37E6 /* libglslang_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglslang_tvos.a;
+			remoteRef = 9ADABE692CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE6C2CFAFCBE006A37E6 /* libangle_image_util_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_image_util_tvos.a;
+			remoteRef = 9ADABE6B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE6E2CFAFCBE006A37E6 /* libjsoncpp_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsoncpp_tvos.a;
+			remoteRef = 9ADABE6D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE702CFAFCBE006A37E6 /* libangle_util_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_util_tvos.a;
+			remoteRef = 9ADABE6F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE722CFAFCBE006A37E6 /* libangle_common_tvos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_common_tvos.a;
+			remoteRef = 9ADABE712CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE742CFAFCBE006A37E6 /* sample_util_tvos.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = sample_util_tvos.framework;
+			remoteRef = 9ADABE732CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE762CFAFCBE006A37E6 /* MetalANGLE_ios_13.0.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MetalANGLE_ios_13.0.framework;
+			remoteRef = 9ADABE752CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE782CFAFCBE006A37E6 /* libangle_metal_backend_ios_13.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libangle_metal_backend_ios_13.0.a;
+			remoteRef = 9ADABE772CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE7A2CFAFCBE006A37E6 /* hello_triangle.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = hello_triangle.app;
+			remoteRef = 9ADABE792CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE7C2CFAFCBE006A37E6 /* multi_texture.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = multi_texture.app;
+			remoteRef = 9ADABE7B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE7E2CFAFCBE006A37E6 /* particle_system.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = particle_system.app;
+			remoteRef = 9ADABE7D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE802CFAFCBE006A37E6 /* simple_texture_2d.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_texture_2d.app;
+			remoteRef = 9ADABE7F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE822CFAFCBE006A37E6 /* simple_texture_cubemap.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_texture_cubemap.app;
+			remoteRef = 9ADABE812CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE842CFAFCBE006A37E6 /* simple_vertex_shader.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_vertex_shader.app;
+			remoteRef = 9ADABE832CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE862CFAFCBE006A37E6 /* texture_wrap.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = texture_wrap.app;
+			remoteRef = 9ADABE852CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE882CFAFCBE006A37E6 /* mip_map_2d.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = mip_map_2d.app;
+			remoteRef = 9ADABE872CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE8A2CFAFCBE006A37E6 /* stencil_operations.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = stencil_operations.app;
+			remoteRef = 9ADABE892CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE8C2CFAFCBE006A37E6 /* tri_fan_microbench.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = tri_fan_microbench.app;
+			remoteRef = 9ADABE8B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE8E2CFAFCBE006A37E6 /* hello_triangle_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = hello_triangle_mac.app;
+			remoteRef = 9ADABE8D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE902CFAFCBE006A37E6 /* multi_texture_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = multi_texture_mac.app;
+			remoteRef = 9ADABE8F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE922CFAFCBE006A37E6 /* particle_system_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = particle_system_mac.app;
+			remoteRef = 9ADABE912CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE942CFAFCBE006A37E6 /* simple_texture_2d_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_texture_2d_mac.app;
+			remoteRef = 9ADABE932CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE962CFAFCBE006A37E6 /* simple_texture_cubemap_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_texture_cubemap_mac.app;
+			remoteRef = 9ADABE952CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE982CFAFCBE006A37E6 /* simple_vertex_shader_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_vertex_shader_mac.app;
+			remoteRef = 9ADABE972CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE9A2CFAFCBE006A37E6 /* texture_wrap_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = texture_wrap_mac.app;
+			remoteRef = 9ADABE992CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE9C2CFAFCBE006A37E6 /* mip_map_2d_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = mip_map_2d_mac.app;
+			remoteRef = 9ADABE9B2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABE9E2CFAFCBE006A37E6 /* stencil_operations_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = stencil_operations_mac.app;
+			remoteRef = 9ADABE9D2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABEA02CFAFCBE006A37E6 /* tri_fan_microbench_mac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = tri_fan_microbench_mac.app;
+			remoteRef = 9ADABE9F2CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADABEA22CFAFCBE006A37E6 /* simple_vertex_shader_tvos.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = simple_vertex_shader_tvos.app;
+			remoteRef = 9ADABEA12CFAFCBE006A37E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		565187851998B3760053D793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565187AB1998B3760053D793 /* Images.xcassets in Resources */,
+				565187991998B3760053D793 /* InfoPlist.strings in Resources */,
+				565187A21998B3760053D793 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565187AE1998B3760053D793 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565187BC1998B3760053D793 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		565187831998B3760053D793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565187A91998B3760053D793 /* ViewController.m in Sources */,
+				5651879F1998B3760053D793 /* AppDelegate.m in Sources */,
+				5651879B1998B3760053D793 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565187AC1998B3760053D793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565187BE1998B3760053D793 /* HelloTriangleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565187B61998B3760053D793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565187861998B3760053D793 /* HelloTriangle */;
+			targetProxy = 565187B51998B3760053D793 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		565187971998B3760053D793 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565187981998B3760053D793 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		565187A01998B3760053D793 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565187A11998B3760053D793 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		565187BA1998B3760053D793 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565187BB1998B3760053D793 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		565187BF1998B3760053D793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		565187C01998B3760053D793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		565187C21998B3760053D793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloTriangle/HelloTriangle-Prefix.pch";
+				INFOPLIST_FILE = "HelloTriangle/HelloTriangle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		565187C31998B3760053D793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloTriangle/HelloTriangle-Prefix.pch";
+				INFOPLIST_FILE = "HelloTriangle/HelloTriangle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		565187C51998B3760053D793 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTriangle.app/HelloTriangle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloTriangle/HelloTriangle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HelloTriangleTests/HelloTriangleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		565187C61998B3760053D793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTriangle.app/HelloTriangle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloTriangle/HelloTriangle-Prefix.pch";
+				INFOPLIST_FILE = "HelloTriangleTests/HelloTriangleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		565187821998B3760053D793 /* Build configuration list for PBXProject "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565187BF1998B3760053D793 /* Debug */,
+				565187C01998B3760053D793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		565187C11998B3760053D793 /* Build configuration list for PBXNativeTarget "HelloTriangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565187C21998B3760053D793 /* Debug */,
+				565187C31998B3760053D793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		565187C41998B3760053D793 /* Build configuration list for PBXNativeTarget "HelloTriangleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565187C51998B3760053D793 /* Debug */,
+				565187C61998B3760053D793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5651877F1998B3760053D793 /* Project object */;
+}
