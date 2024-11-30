@@ -11,7 +11,7 @@ This is an example about using metalangle to replace a OpenGL ES2 Xcode iOS proj
 5. You can see a red screen in simulator.
 6. Make change like commit [`011a9b89a56234a5486c41046b1a2e1871029cc7`](https://github.com/susan31213-a/metalangle-objective-c-test/commit/011a9b89a56234a5486c41046b1a2e1871029cc7)
    - Link MetalANGLE.framework to the project.
-   - Change OpenGL API to metalangle API. Here is a [table](https://github.com/susan31213-a/metalangle-objective-c-test/commit/011a9b89a56234a5486c41046b1a2e1871029cc7) of equivalent classes.
+   - Change OpenGL API to metalangle API. Here is a [table](https://github.com/kakashidinho/metalangle/blob/master/src/libANGLE/renderer/metal/DevSetup.md#porting-from-apples-eagl--glkit-to-mglkit) of equivalent classes.
    - Open the storyboard and remove the `GL View Controller` and add `View Controller` instead.
    - Set added View Controller's custom class name to `ViewController` and the view under View Controller class name to `MGLKView`.
 7. Clean build folder and build Application again.
