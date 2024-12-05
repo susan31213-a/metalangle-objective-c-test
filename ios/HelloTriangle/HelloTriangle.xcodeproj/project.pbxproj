@@ -21,8 +21,9 @@
 		565187B41998B3760053D793 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5651878E1998B3760053D793 /* UIKit.framework */; };
 		565187BC1998B3760053D793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 565187BA1998B3760053D793 /* InfoPlist.strings */; };
 		565187BE1998B3760053D793 /* HelloTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565187BD1998B3760053D793 /* HelloTriangleTests.m */; };
+		9A1945642D0202DC0025EBD6 /* MetalANGLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABE2E2CFAFCBE006A37E6 /* MetalANGLE.framework */; };
+		9A1945652D0202DC0025EBD6 /* MetalANGLE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABE2E2CFAFCBE006A37E6 /* MetalANGLE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9ADABEAF2CFB235C006A37E6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABEAE2CFB235C006A37E6 /* OpenGLES.framework */; platformFilter = ios; };
-		9ADABEB12CFB2463006A37E6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADABEB02CFB2463006A37E6 /* GLKit.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -448,6 +449,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A1945662D0202DC0025EBD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A1945652D0202DC0025EBD6 /* MetalANGLE.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		565187871998B3760053D793 /* HelloTriangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTriangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5651878A1998B3760053D793 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -482,8 +497,8 @@
 			files = (
 				5651878D1998B3760053D793 /* CoreGraphics.framework in Frameworks */,
 				5651878F1998B3760053D793 /* UIKit.framework in Frameworks */,
+				9A1945642D0202DC0025EBD6 /* MetalANGLE.framework in Frameworks */,
 				5651878B1998B3760053D793 /* Foundation.framework in Frameworks */,
-				9ADABEB12CFB2463006A37E6 /* GLKit.framework in Frameworks */,
 				9ADABEAF2CFB235C006A37E6 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +670,7 @@
 				565187831998B3760053D793 /* Sources */,
 				565187841998B3760053D793 /* Frameworks */,
 				565187851998B3760053D793 /* Resources */,
+				9A1945662D0202DC0025EBD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
